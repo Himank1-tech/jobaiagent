@@ -95,10 +95,6 @@ job-apply-ai tailor --cv path/to/cv_template.docx --job path/to/job_description.
 
 For detailed testing instructions, see [TESTING_GUIDE.md](TESTING_GUIDE.md).
 
-## License
-
-MIT
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
