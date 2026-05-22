@@ -12,7 +12,7 @@ fi
 
 # Check Python version
 python_version=$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
-if [[ $(echo "$python_version < 3.8" | bc) -eq 1 ]]; then
+if [[ $(python3 -c 'import sys; print(1 if sys.version_info < (3, 8) else 0)') -eq 1 ]]; then
     echo "Python version $python_version is not supported. Please install Python 3.8 or higher."
     exit 1
 fi
